@@ -37,5 +37,5 @@ jobs:
        run: gcloud builds submit --tag us-central1-docker.pkg.dev/sound-proposal-460602-g4/notely-ar-repo/notely:latest . 
 
      - name: Deploy to Cloud RUn
-       run: gcloud run deploy notely --tag us-central1-docker.pkg.dev/sound-proposal-460602-g4/notely-ar-repo/notely:latest --region us-central1 --allow-unauthenticated --project sound-proposal-460602-g4 --max-instances=4
+       run: gcloud run deploy notely --image us-central1-docker.pkg.dev/sound-proposal-460602-g4/notely-ar-repo/notely:latest --region us-central1 --allow-unauthenticated --project sound-proposal-460602-g4 --max-instances=4
     
